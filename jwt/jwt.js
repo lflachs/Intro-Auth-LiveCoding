@@ -27,7 +27,6 @@ const posts = [
 const authenticatToken = (req, res, next) =>{
     const authHeader = req.headers["authorization"];
     console.log(req.headers["authorization"]);
-    // console.log(authHeader && authHeader.split(" ")[1])
     const token = authHeader && authHeader.split(" ")[1];
 
 

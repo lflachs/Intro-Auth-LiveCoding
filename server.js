@@ -6,11 +6,8 @@ const app = express();
 app.use(cookieParser());
 
 app.get('/', (req, res) => {
-
     let existingCookie = req.cookies["nameOfTheUser"];
-    
     if(existingCookie){
-
         res.send(`<h1>Welcome ${req.cookies["nameOfTheUser"]}</h1>`)
     }
     else{
